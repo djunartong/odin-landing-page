@@ -91,7 +91,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 90px;
 
 }
@@ -132,6 +131,10 @@ button {
 .content-middle {
     background-color: #e5e7eb;
     padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .quote {
@@ -140,6 +143,7 @@ button {
     font-weight: 300;
     font-style: italic;
     margin-top: 20px;
+    width: 800px;
 }
 
 .speaker {
