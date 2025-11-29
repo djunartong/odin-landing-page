@@ -7,7 +7,7 @@ body {
     justify-content: space-between;
 }
 
-.header, .footer {
+.header, .sub-header, .footer {
     background-color: #1f2937;
     color: white;
 }
@@ -44,12 +44,16 @@ a {
     flex: 1 0;
     justify-content: space-between;
     align-items: center;
-    padding: 48px 100px 80px 100px;
-    margin-bottom: 20px;
+    padding: 40px 100px 90px 100px;
 }
 
 .sub-header-text {
     max-width: 400px;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
 }
 
 .sub-header-text .title {
@@ -63,10 +67,6 @@ a {
     font-size: 18px;
 }
 
-.sub-header-text .text {
-    margin-bottom: 10px;
-}
-
 .image {
     height: 200px;
     width: 450px;
@@ -75,6 +75,9 @@ a {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+}
+.sub-header button{
+    align-self: flex-start;
 }
 
 button {
@@ -87,12 +90,8 @@ button {
     font-weight: 700;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 90px;
-
+.content-top {
+    padding: 50px;
 }
 
 .card-caption {
@@ -132,9 +131,16 @@ button {
     background-color: #e5e7eb;
     padding: 50px 200px;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
     justify-content: center;
+}
+
+.middle-text {
+    width: 800px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote {
@@ -142,27 +148,38 @@ button {
     color: #1f2937;
     font-weight: 300;
     font-style: italic;
-    margin-top: 20px;
     width: 800px;
 }
 
 .speaker {
     font-size:18px;
     font-weight: 900;
-    text-align: end;
     padding: 20px;
+    align-self: flex-end;
 }
 
 .content-bottom {
     display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.call {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    width: 600px;
     background-color: #3882f6;
     color: #e5e7eb;
     border: 1px solid #3882f6;
     border-radius: 5px;
-    padding: 30px 120px;
+    padding: 30px 50px;
+    margin: 60px;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-bottom button { 
@@ -181,8 +198,8 @@ button {
 }
 
 .footer {
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
